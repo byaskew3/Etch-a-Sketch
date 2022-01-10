@@ -1,0 +1,44 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background: white;
+    background: url(https://wallpapercave.com/wp/wp9689614.jpg);
+    background-size: cover;
+}
+
+canvas {
+    width: 1200px; 
+    height: 750px;
+    border: 30px solid #bb4f4f;
+    border-radius: 10px;
+    background: white;
+}
+
+canvas.shake {
+    animation: shake 0.5s linear;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
