@@ -6,6 +6,13 @@ body {
     background: white;
     background: url(https://wallpapercave.com/wp/wp9689614.jpg);
     background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+  font-size: 36px;
+  color: #9b89db;
+  text-shadow: 2px 2px 8px #715bbe;
 }
 
 canvas {
@@ -14,10 +21,28 @@ canvas {
     border: 30px solid #bb4f4f;
     border-radius: 10px;
     background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+button {
+  background: #bb4f4f;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 3px solid #b16262;
+  color: #c2c0c0;
+  font-size: 14px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  font-family: 'Press Start 2P', cursive;
+}
+
+button:hover {
+  background: #7e3535;
+  box-shadow: rgba(255, 201, 201, 0.35) 0px 5px 15px;
 }
 
 canvas.shake {
-    animation: shake 0.5s linear;
+    animation: shake 0.5s linear 1;
 }
 
 @keyframes shake {
@@ -41,4 +66,15 @@ canvas.shake {
     60% {
       transform: translate3d(4px, 0, 0);
     }
+}
+
+#copyright {
+  color: #c2c0c0;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
 }
